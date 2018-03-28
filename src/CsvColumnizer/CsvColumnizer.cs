@@ -109,7 +109,7 @@ namespace CsvColumnizer
                         this.config.quoteChar,
                         this.config.escapeChar, // is '\0' when not checked in config dlg
                         this.config.commentChar,
-                        false))
+                        ValueTrimmingOptions.None))
                     {
                         if (csv.FieldCount < this.config.minColumns)
                         {
@@ -153,7 +153,7 @@ namespace CsvColumnizer
                 this.config.quoteChar,
                 this.config.escapeChar, // is '\0' when not checked in config dlg
                 this.config.commentChar,
-                false))
+                ValueTrimmingOptions.None))
             {
                 csv.ReadNextRecord();
                 int fieldCount = csv.FieldCount;
@@ -284,7 +284,7 @@ namespace CsvColumnizer
                         this.config.quoteChar,
                         this.config.escapeChar, // is '\0' when not checked in config dlg
                         this.config.commentChar,
-                        false))
+                        ValueTrimmingOptions.None))
                     {
                         csv.ReadNextRecord();
                         int fieldCount = csv.FieldCount;
